@@ -1,0 +1,16 @@
+@import "global.css";
+
+.header-container {
+}
+
+.header-message {
+  width: 1440px;
+  height: 40px;
+  background-color: #032340;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
