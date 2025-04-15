@@ -13,11 +13,14 @@
         <div class="header-message">
           <p>با عضویت در فیت لند اولین ارسال را مهمون ما باش :)</p>
         </div>
+
         <div class="main-header">
           <div class="logo-search-profile-container">
             <div class="logo-box">
-              <img src="assets/svgs/fitland.svg" alt="logo" />
-              <p class="logo-caption">فروشگاه لوازم ورزشی فیت‌لند</p>
+              <a href="#">
+                <img src="assets/svgs/fitland.svg" alt="logo" />
+                <p class="logo-caption">فروشگاه لوازم ورزشی فیت‌لند</p></a
+              >
             </div>
 
             <div class="search-box">
@@ -48,6 +51,10 @@
             </div>
           </div>
 
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-bar-icon">
+            <i class="fa fa-bars"></i>
+          </label>
           <div class="main-menu">
             <nav>
               <ul class="category-menu">
@@ -84,68 +91,70 @@
       </header>
 
       <main>
-        <section class="introduction">
-          <div class="intro-content">
-            <p class="intro-subtitle">راحت و مطمئن خرید کنید!</p>
-            <h1 class="intro-title1">همراه تو در مسیر سلامتی</h1>
-            <h2 class="intro-title2">سهم بزرگ خودتان را امروز بگیرید! </h2>
-            <p class="intro-description">
-              بزرگترین حراج فصل فیت‌لند همین حالا شروع کن و محصولات رو با یه
-              تخفیف شگفت‌انگیز بخر!
-            </p>
-            <a href="#" class="products-button">
+        <section class="intoduction-container">
+          <div class="introduction">
+            <div class="intro-content">
+              <p class="intro-subtitle">راحت و مطمئن خرید کنید!</p>
+              <h1 class="intro-title1">همراه تو در مسیر سلامتی</h1>
+              <h2 class="intro-title2">سهم بزرگ خودتان را امروز بگیرید! </h2>
+              <p class="intro-description">
+                بزرگترین حراج فصل فیت‌لند همین حالا شروع کن و محصولات رو با یه
+                تخفیف شگفت‌انگیز بخر!
+              </p>
+              <a href="#" class="products-button">
+                <img
+                  src="assets/svgs/arrow-left.svg"
+                  alt="فلش"
+                  class="left-arrow"
+                />
+                مشاهده محصولات
+              </a>
+            </div>
+
+            <div class="intro-image">
               <img
-                src="assets/svgs/arrow-left.svg"
-                alt="فلش"
-                class="left-arrow"
+                src="assets/images/run-man.png"
+                alt="تصویر دونده"
+                class="runner"
               />
-              مشاهده محصولات
-            </a>
-          </div>
-
-          <div class="intro-image">
-            <img
-              src="assets/images/run-man.png"
-              alt="تصویر دونده"
-              class="runner"
-            />
-          </div>
-        </section>
-
-        <section class="site-features">
-          <div class="feature-item">
-            <img
-              src="assets/svgs/shop.svg"
-              alt="shop-icon"
-              class="feature-icon"
-            />
-            <div class="feature">
-              <p class="feature-number">۳۰۰ +</p>
-              <span class="feature-content">محصولات متنوع</span>
             </div>
           </div>
 
-          <div class="feature-item">
-            <img
-              src="assets/svgs/like.svg"
-              alt="shop-icon"
-              class="feature-icon"
-            />
-            <div class="feature">
-              <p class="feature-number">% ۹۵</p>
-              <span class="feature-content">رضایت مشتری</span>
+          <div class="site-features">
+            <div class="feature-item">
+              <img
+                src="assets/svgs/shop.svg"
+                alt="shop-icon"
+                class="feature-icon"
+              />
+              <div class="feature">
+                <p class="feature-number">۳۰۰ +</p>
+                <span class="feature-content">محصولات متنوع</span>
+              </div>
             </div>
-          </div>
 
-          <div class="feature-item">
-            <img
-              src="assets/svgs/calendar.svg"
-              alt="shop-icon"
-              class="feature-icon"
-            />
-            <div class="feature">
-              <p class="feature-number">۴ روز</p>
-              <span class="feature-content">از خرید تا دریافت</span>
+            <div class="feature-item">
+              <img
+                src="assets/svgs/like.svg"
+                alt="shop-icon"
+                class="feature-icon"
+              />
+              <div class="feature">
+                <p class="feature-number">% ۹۵</p>
+                <span class="feature-content">رضایت مشتری</span>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <img
+                src="assets/svgs/calendar.svg"
+                alt="shop-icon"
+                class="feature-icon"
+              />
+              <div class="feature">
+                <p class="feature-number">۴ روز</p>
+                <span class="feature-content">از خرید تا دریافت</span>
+              </div>
             </div>
           </div>
         </section>
@@ -578,7 +587,7 @@
         <section class="footer-container">
           <div class="footer-links">
             <ul class="footer-links-item">
-              محبوب‌ترین‌ها
+              <li>محبوب‌ترین‌ها</li>
               <li><a href="#">لباس مردانه</a></li>
               <li><a href="#">کفش فوتبال</a></li>
               <li><a href="#">دوچرخه</a></li>
@@ -586,7 +595,7 @@
             </ul>
 
             <ul class="footer-links-item">
-              خدمات مشتریان
+              <li>خدمات مشتریان</li>
               <li><a href="#">سوالات متداول</a></li>
               <li><a href="#">حریم خصوصی</a></li>
               <li><a href="#"></a>گزارش ایراد در سایت</li>
@@ -594,7 +603,7 @@
             </ul>
 
             <ul class="footer-links-item">
-              راهنمای خرید
+              <li>راهنمای خرید</li>
               <li><a href="#">راهنمای ثبت سفارش</a></li>
               <li><a href="#">شیوه‌های پرداخت</a></li>
               <li><a href="#">نحوه ارسال سفارش ها</a></li>
@@ -602,7 +611,7 @@
             </ul>
 
             <ul class="footer-links-item">
-              اطلاعات تماس
+              <li>اطلاعات تماس</li>
               <li><a href="#"></a>نشانی تهران - تجریش - خیابان سالور</li>
               <li><a href="#"></a>شماره تماس <span> 3456789-021</span></li>
               <li>

@@ -9,8 +9,6 @@
 body {
   direction: rtl;
   font-family: vazirmatn, sans-serif;
-  display: flex;
-  justify-content: center;
 }
 
 a {
